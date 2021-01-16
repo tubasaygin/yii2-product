@@ -3,8 +3,8 @@
 namespace tubasaygin\products\controllers;
 
 use Yii;
-use vendor\modules\products\models\ProductCategory;
-use vendor\modules\products\models\ProductCategorySearch;
+use tubasaygin\products\models\ProductCategory;
+use tubasaygin\products\models\ProductCategorySearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
