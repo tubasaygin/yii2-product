@@ -4,7 +4,7 @@ namespace tubasaygin\products\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use vendor\modules\products\models\ProductCategory;
+use tubasaygin\products\models\ProductCategory;
 
 /**
  * ProductCategorySearch represents the model behind the search form of `vendor\modules\products\models\ProductCategory`.
