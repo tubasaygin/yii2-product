@@ -44,7 +44,6 @@ Son olarak veritabanı işlemlerinin de sağlanabilmesi için:
 
 Artık modülü kullanabilirsiniz!
 
-Aşağıda modül ile alakalı tüm bilgiler bulunmaktadır. 
 <h3>Modül Tantımı</h3>
 
 Modül, bir ürün yaratırken kullanıcıdan isim, fiyat gibi bilgilerin yanında aynı zamanda tarih ve yüklenecek dosya bilgilerini de ister.
@@ -56,5 +55,8 @@ Bu bilgiler alınırken widget kullanılmıştır. Bu widgetları komut yardım�
 Bu eklenti sayesinde tarih widgetını hazır bir şekilde kullanabilirsiniz.
 Ürünün resmini yüklerken de; indirdiğiniz dosya web altındaki uploads klasörüne kaydedilecektir. Bunun yanında veritabanında da dosyanın konumunu görebilirsiniz. 
 Aşağıda bununla alakalı bir ekran görüntüsü görüyorsunuz: 
+
+![Ekran Görüntüsü (111)](https://user-images.githubusercontent.com/70032538/104810722-a4eddf00-5807-11eb-80f9-c84188091ea9.png)
+
 
  
