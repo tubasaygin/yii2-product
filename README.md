@@ -19,4 +19,42 @@ Bunu yapmak için packagist işlemini tamamladıktan sonra aşağıdaki komutu �
  composer require --prefer-dist tubasaygin/yii2-products "dev-main"
  </pre></code>
  
+Bu işlemi yaptıktan sonra projenizde backend/config klasörü altında main.php dosyanıza modül yolunu verin
+
+ <pre><code>
+ 'modules' => [
+        'products' => [
+            'class' => 'tubasaygin\products\Module',
+        ],
+    ],
+    
+ </pre></code>
+ 
+ 
+Bu işlemleri bitirdikten sonra;
+  <pre><code>
+  vagrant up
+  </pre></code>
+komutunu çalıştırmalısınız. 
+
+Son olarak veritabanı işlemlerinin de sağlanabilmesi için:
+ <pre><code>
+ php yii migrate/up --migrationPath=@vendor/tubasaygin/products/migrations  
+ </pre></code>
+
+Artık modülü kullanabilirsiniz!
+
+Aşağıda modül ile alakalı tüm bilgiler bulunmaktadır. 
+<h3>Modül Tantımı</h3>
+
+Modül, bir ürün yaratırken kullanıcıdan isim, fiyat gibi bilgilerin yanında aynı zamanda tarih ve yüklenecek dosya bilgilerini de ister.
+Bu bilgiler alınırken widget kullanılmıştır. Bu widgetları komut yardımıyla projeye eklemeniz gerekebilir:
+ <pre><code>
+ composer require 2amigos/yii2-date-picker-widget:~1.0
+ </pre></code>
+ 
+Bu eklenti sayesinde tarih widgetını hazır bir şekilde kullanabilirsiniz.
+Ürünün resmini yüklerken de; indirdiğiniz dosya web altındaki uploads klasörüne kaydedilecektir. Bunun yanında veritabanında da dosyanın konumunu görebilirsiniz. 
+Aşağıda bununla alakalı bir ekran görüntüsü görüyorsunuz: 
+
  
