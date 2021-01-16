@@ -1,4 +1,4 @@
-Products Modülü: 
+<h1> Products Modülü: </h1>
 
 Bu modül, ürün yaratma, ürünleri kategorize etme, silme ve düzenleme işlemlerini yapabilmek
 için yazılmıştır.
@@ -10,5 +10,13 @@ için yazılmıştır.
 - Modül ürünleri filtreleme işlemlerini gerçekleştirmektedir. Bunu yaparken de product_category tablosunu kullanır.
 - Filtreleme işleminin yanında, ürün ekleme, silme, güncelleme ve yeni bir kategori ekleme, silme, güncelleme işlemlerini yapabilmektedir.
 
-<h1> KURULUM </h1>
+<h3> KURULUM </h3>
+<hr>
 
+Modülü packagist.org sayfasında yeni bir depo olarak oluşturup projenize ekleyerek kullanabilirsiniz. 
+Bunu yapmak için packagist işlemini tamamladıktan sonra aşağıdaki komutu çalıştırın: 
+ <pre><code>
+ composer require --prefer-dist tubasaygin/yii2-products "dev-main"
+ </pre></code>
+ 
+ 
