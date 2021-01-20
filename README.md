@@ -14,7 +14,7 @@ için yazılmıştır.
 <hr>
 
 Modülü packagist.org sayfasında yeni bir depo olarak oluşturup projenize ekleyerek kullanabilirsiniz. 
-Bunu yapmak için packagist işlemini tamamladıktan sonra aşağıdaki komutu çalıştırın: 
+Bunu yapmak için aşağıdaki komutu çalıştırın: 
  <pre><code>
  composer require --prefer-dist tubasaygin/yii2-products "dev-main"
  </pre></code>
