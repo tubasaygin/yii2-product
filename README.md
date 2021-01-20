@@ -58,5 +58,9 @@ Aşağıda bununla alakalı bir ekran görüntüsü görüyorsunuz:
 
 ![Ekran Görüntüsü (111)](https://user-images.githubusercontent.com/70032538/104810722-a4eddf00-5807-11eb-80f9-c84188091ea9.png)
 
+<h2>Controllers</h2>
+Controller sınıflarında behaviors() fonksiyonu altında "access" tanımlanmıştır. Böylece kullanıcı giriş yapmadan herhangi bir değişiklik iznine sahip olamamaktadır. 
+Aşağıda bununla ilgili bir ekran kaydı görüyorsunuz:
+
 
  
