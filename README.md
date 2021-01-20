@@ -62,5 +62,33 @@ Aşağıda bununla alakalı bir ekran görüntüsü görüyorsunuz:
 Controller sınıflarında behaviors() fonksiyonu altında "access" tanımlanmıştır. Böylece kullanıcı giriş yapmadan herhangi bir değişiklik iznine sahip olamamaktadır. 
 Aşağıda bununla ilgili bir ekran kaydı görüyorsunuz:
 
+![record](https://user-images.githubusercontent.com/70032538/105158707-539f6180-5b1f-11eb-8b91-f2053ead040b.gif)
 
+Ayrıca ProductController'da actionCreate() fonksiyonu altında düzenlemeler yapılmıştır. Yeni bir çalışan oluşturulduğunda ve fotoğrafı yüklendiğinde bu fotoğraflara veritabanından ulaşabilmenin yanında modül altındaki web/uploads klasöründen de ulaşabilmesi için UploadedFile kullanılmıştır, ve UploadedFile projeye import edilmiştir.
+
+ <pre><code>
+ use yii\web\UploadedFile;
+ </pre></code>
+ 
+<h2>Views</h2>
+Product views'inin içinde çalışanların departmanlarına göre filtrelenebilmesi için ArrayHelper kullanılmıştır. Yukarıda ilk verilen ekran kaydından bu işlemin yapılabildiğini görebilirsiniz...
+ 
+ <pre><code>
+ use yii\helpers\ArrayHelper;
+ </pre></code>
+ 
+Aynı zamanda product view'inin altında _form.php dosyasında widgetların kullanılabilmesi, upload olaylarının gerçekleşebilmesi için aşağıdaki kod parçası eklenmiştir:
+
+ <pre><code>
+ <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
+</pre></code>
+
+<h2>Layouts</h2>
+Layouts dosyası advanced projesinin altında hazır gelenin haricinde yeni bir tane oluşturulmuştur. Tasarımda komple bir değişiklik yapılmamıştır. Kullanıcı çalışanlara ve departmanlara kolayca ulaşabilmesi için aşağıdaki kod parçası eklenmiştir:
+
+ <pre><code>
+ ['label' => 'Products', 'url' => ['/products/product/index']],
+ ['label' => 'Categories', 'url' => ['/products/product-category/index']],
+ </pre></code>
+ 
  
